@@ -1,2 +1,2 @@
-# crypto-wallet
+# Crypto-Wallet
 A wallet to save cryptocurrency
