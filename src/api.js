@@ -191,6 +191,8 @@ MerchantAPI.prototype.createWallet = function (options) {
   return this.cache.createWallet(options)
 }
 
+
+
 // HD Accounts API
 MerchantAPI.prototype.upgradeWallet = function (guid, options) {
   return this.getWallet(guid, options)
