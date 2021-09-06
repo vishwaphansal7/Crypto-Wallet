@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 'use strict'
 
 var pkg = require('../package.json')
