@@ -1,7 +1,8 @@
 var R = require('ramda')
 var unicodeLength = require('unicode-length')
 
-function boxMessage (lines, options) {
+function boxMessage (lines, options) 
+{
   options = options || {}
   var borderChar = options.borderChar || '*'
   var padding = options.padding || 4
