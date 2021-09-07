@@ -34,15 +34,18 @@ describe('api', function ()
 
   describe('getBalance', function () 
   {
-    it('should get the right balance', function (done) {
-      api.getBalance(guid, options).then(function (result) {
+    it('should get the right balance', function (done) 
+       {
+      api.getBalance(guid, options).then(function (result) 
+       {
         expect(result.balance).to.equal(wallet.finalBalance)
         done()
       })
     })
   })
 
-  describe('listAddresses', function () {
+  describe('listAddresses', function () 
+  {
     it('should list the active keys', function (done) {
       api.listAddresses(guid, options).then(function (result) {
         var firstKey = wallet.activeKeys[0]
@@ -58,7 +61,8 @@ describe('api', function ()
     })
   })
 
-  describe('getAddressBalance', function () {
+  describe('getAddressBalance', function () 
+ {
     it('should get the first address balance', function (done) {
       api.getAddressBalance(guid, options).then(function (result) {
         var firstKey = wallet.activeKeys[0]
@@ -72,7 +76,8 @@ describe('api', function ()
     })
   })
 
-  describe('generateAddress', function () {
+  describe('generateAddress', function ()
+  {
     it('should call wallet.newLegacyAddress', function (done) {
       sinon.spy(wallet, 'newLegacyAddress')
       api.generateAddress(guid, options).then(function (result) {
@@ -92,7 +97,8 @@ describe('api', function ()
     })
   })
 
-  describe('archiveAddress', function () {
+  describe('archiveAddress', function () 
+{
     it('should archive the address', function (done) {
       api.archiveAddress(guid, options).then(function (result) {
         expect(result.archived).to.equal(options.address)
@@ -101,7 +107,8 @@ describe('api', function ()
     })
   })
 
-  describe('unarchiveAddress', function () {
+  describe('unarchiveAddress', function ()
+ {
     it('should unarchive the address', function (done) {
       api.unarchiveAddress(guid, options).then(function (result) {
         expect(result.active).to.equal(options.address)
@@ -110,7 +117,8 @@ describe('api', function ()
     })
   })
 
-  describe('listxPubs', function () {
+  describe('listxPubs', function () 
+  {
     it('should list xpubs', function (done) {
       api.listxPubs(guid, options).then(function (result) {
         expect(result[0]).to.equal('xpub123456')
@@ -119,7 +127,8 @@ describe('api', function ()
     })
   })
 
-  describe('createAccount', function () {
+  describe('createAccount', function () 
+ {
     it('should create an account', function (done) {
       api.createAccount(guid, options).then(function (result) {
         expect(result.label).to.equal('my new account')
