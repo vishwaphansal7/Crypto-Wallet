@@ -11,15 +11,18 @@ let expect = chai.expect
 let api = require('../src/api')
 let wallet = require('./wallet.mock')
 
-api.getWallet = function (guid, options) {
+api.getWallet = function (guid, options) 
+{
   return q(wallet)
 }
 
-api.getWalletHD = function (guid, options) {
+api.getWalletHD = function (guid, options) 
+{
   return q(wallet)
 }
 
-describe('api', function () {
+describe('api', function () 
+  {
   var guid = 'guidguid-guid-guid-guid-guidguidguid'
   var options = {
     password: 'pass123',
@@ -29,7 +32,8 @@ describe('api', function () {
     api_code: 'asdfasdf-asdf-asdf-asdf-asdfasdfasdf'
   }
 
-  describe('getBalance', function () {
+  describe('getBalance', function () 
+  {
     it('should get the right balance', function (done) {
       api.getBalance(guid, options).then(function (result) {
         expect(result.balance).to.equal(wallet.finalBalance)
