@@ -2500,9 +2500,9 @@ q@^1.4.1, q@~1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.4.1.tgz#55705bcd93c5f3673530c2c2cbc0c2b3addc286e"
 
-qs@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-4.0.0.tgz#c31d9b74ec27df75e543a86c78728ed8d4623607"
+qs@6.0.4:
+  version 6.0.4"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.0.4.tgz#c31d9b74ec27df75e543a86c78728ed8d4623607"
 
 qs@5.2.0:
   version "5.2.0"
